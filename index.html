@@ -1,50 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8"
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/e48d166edc.js" crossorigin="anonymous" ></script>
+<html>
+  <head>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>TO DO LIST APP</title>
-</head>
-<body >
-    
-    <div class="container">
+    <script src="javascript.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
-<div class="header">
-    
-    <div class="clear">
-        <i class="fa fa-refresh"></i>
+  </head>
+  <body>
+    <div class="todos-bg-container">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="todos-heading">Todos</h1>
+            <h1 class="create-task-heading">
+              Create <span class="create-task-heading-subpart">Task</span>
+            </h1>
+            <input type="text" id="todoUserInput" class="todo-user-input" placeholder="What needs to be done?"/>
+            <button class="button" id="addTodoButton">Add</button>
+            <h1 class="todo-items-heading">
+              My <span class="todo-items-heading-subpart">Tasks</span>
+            </h1>
+            <ul class="todo-items-container" id="todoItemsContainer"></ul>
+            <button class="button" id="saveTodoButton">Save</button>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <div id="date"></div>
-</div>
-
-<div class="title">
-    <p>"Add Your list Here" </p>
-</div>
-
-<div class="content">
-
-    <ul id="list">
-
-        <li class="item">
-            <i class="fa fa-circle-thin co" job="complete" id="0"></i>
-            <p class="text">Add More Tasks</p>
-            <i class="fa fa-trash-o de" job="delete" id="0"></i> 
-        </li>
-
-    </ul>
-</div>
-<div class="add-to-do">
-    <input type="text" id="input" placeholder="Add tasks">
-</div>
-</div>
-
-    <script src="script.js"></script>
-</body>
-
-
+  </body>
 </html>
